@@ -8,9 +8,7 @@ public class SystemScoreUI : MonoBehaviour
     //set variable to store Player's ScoreText
     public Text Player1Point;
     public Text Player2Point;
-    
-    //set class for score
-    public ScoreManager scoreManager;
+
     
     // Start is called before the first frame update
     void Start()
@@ -26,7 +24,7 @@ public class SystemScoreUI : MonoBehaviour
     
     public void ScoreController()
     {
-        Player1Point.text = "Player1 : " + scoreManager.playerScore[0].score;
-        Player2Point.text = "Player2 : " + scoreManager.playerScore[1].score;
+        Player1Point.text = "Player1 : " + ScoreManager.scoreManager.playerScore[0].score;
+        Player2Point.text = "Player2 : " + ScoreManager.scoreManager.playerScore[1].score;
     }
 }

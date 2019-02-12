@@ -8,7 +8,7 @@ public class PlayerTouchGround : MonoBehaviour
     public int playerNumber;
     
     //set classs to refer controller
-    public Player_Info[] player;
+    private Player_Info[] player;
     
     //start
     void Start()

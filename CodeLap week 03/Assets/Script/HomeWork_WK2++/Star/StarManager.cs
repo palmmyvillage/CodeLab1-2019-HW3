@@ -13,7 +13,16 @@ public class StarManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        starManager = this;
+        //make static or destroy
+        if (starManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            starManager = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

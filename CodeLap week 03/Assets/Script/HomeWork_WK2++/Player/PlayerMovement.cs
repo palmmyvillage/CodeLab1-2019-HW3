@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //ini each classArray
         player = PlayerController.playerController.playerInfo;
-        Class = ClassesStat.classesStat.classInfo;
+        Class = ClassManager.classManager.classInfo;
         
         //add Gravity
         //use for so that it apply to any number of players

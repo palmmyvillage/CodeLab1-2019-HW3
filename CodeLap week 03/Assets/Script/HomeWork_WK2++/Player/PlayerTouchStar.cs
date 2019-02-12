@@ -7,9 +7,6 @@ public class PlayerTouchStar : MonoBehaviour
     //set playerNumber
     public int playerNumber;
     
-    //set starSpawner
-    public StarSpawner starSpawner;
-    
     //set system manager to check gameEnd
     public SystemManager systemManager;
 
@@ -19,7 +16,7 @@ public class PlayerTouchStar : MonoBehaviour
         {
             Destroy(other.gameObject); //destroy star
             ScoreManager.scoreManager.playerScore[playerNumber - 1].score += other.GetComponent<StarScore>().score; //add score
-            starSpawner.starSpawn(); //spawn new star
+            StarSpawner.starSpawner.spawnStar(); //spawn new star
             
             systemManager.gameEnd(); //check if gameEnd
         }

@@ -13,7 +13,17 @@ public class PlayerController : MonoBehaviour
     //start
     void Awake()
     {
-        playerController = this;
+        
+        //make static or destroy
+        if (playerController == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            playerController = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
 

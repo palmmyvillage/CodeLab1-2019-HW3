@@ -9,7 +9,7 @@ public class StarSpawner : MonoBehaviour
     
     //set SpawnRate
     public SpawnRate rate;
-    public GameObject[] starSpawning;
+    private GameObject[] starSpawning;
     
     //set how to calculate spawn
     public SpawnTimes times;
@@ -18,7 +18,16 @@ public class StarSpawner : MonoBehaviour
 
     void Awake()
     {
-        starSpawner = this;
+        //make static or destroy
+        if (starSpawner == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            starSpawner = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         
         //set rating method
         starSpawning = new GameObject[rate.size];
@@ -40,7 +49,7 @@ public class StarSpawner : MonoBehaviour
         }
     }
 
-    public void starSpawn()
+    public void spawnStar()
     {
         spawnTimesReal = Random.Range(times.spawnNum_min, times.spawnNum_max);
         
@@ -68,6 +77,7 @@ public class SpawnRate
     public int purpleRate;
 }
 
+[System.Serializable]
 //set up how to Spawn
 public class SpawnTimes
 {

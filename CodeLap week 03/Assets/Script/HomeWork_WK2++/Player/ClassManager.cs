@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClassesStat : MonoBehaviour
+public class ClassManager : MonoBehaviour
 {
     //set this class as Static
-    public static ClassesStat classesStat;
+    public static ClassManager classManager;
     
     //set up stat for all classes
     public Class_Info[] classInfo;
@@ -13,7 +13,16 @@ public class ClassesStat : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        classesStat = this;
+        //make static or destroy
+        if (classManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            classManager = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
