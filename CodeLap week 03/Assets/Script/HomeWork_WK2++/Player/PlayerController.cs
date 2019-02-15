@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,5 +39,6 @@ public class Player_Info
     public KeyCode Left;
     public KeyCode Right;
     public int chosenClasses;
+    [FormerlySerializedAs("myType")] public ClassManager.Class my;
     public bool jumpEnable;
 }

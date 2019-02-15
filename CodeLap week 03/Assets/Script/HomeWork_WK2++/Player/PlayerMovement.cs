@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
         player = PlayerController.playerController.playerInfo;
         Class = ClassManager.classManager.classInfo;
         
+        
         //add Gravity
         //use for so that it apply to any number of players
         for (int i = 0; i < player.Length; i++)
@@ -52,12 +53,13 @@ public class PlayerMovement : MonoBehaviour
         //Horizontal movement
         if (Input.GetKey(player[playerNumber].Left)) //move left
         {
-            newForce.x -= Class[player[playerNumber].chosenClasses].runningForce;
+            //newForce.x -= Class[player[playerNumber].chosenClasses].runningForce;
+            newForce.x -= ClassManager.classManager.GetClassRunningForce(player[playerNumber].my);
         }
 
         if (Input.GetKey(player[playerNumber].Right)) //move right
         {
-            newForce.x += Class[player[playerNumber].chosenClasses].runningForce;
+            newForce.x += ClassManager.classManager.GetClassRunningForce(player[playerNumber].my);
         }
 
         //set limitSpeed to moving Horizontal
