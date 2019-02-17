@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-   //initiate the player class
+   //initiate the player_info to refer from
     private Player_Info[] player;
-    private Class_Info[] Class;
 
     // Start is called before the first frame update
     void Start()
     {
-        //ini each classArray
-        player = PlayerController.playerController.playerInfo;
-        Class = ClassManager.classManager.classInfo;
+        //initiate where it can be refer
+        player = PlayerDatabase.playerDatabase.playerInfo;
         
-        
-        //add Gravity
+        //add Gravity (only when the scene start)
         //use for so that it apply to any number of players
         for (int i = 0; i < player.Length; i++)
         {
@@ -39,13 +36,14 @@ public class PlayerMovement : MonoBehaviour
 
     //set function to move each player with force
     public void playerRunning(int playerNumber) //set how player run
-    {
+    {   
+        //set class runningSpeed;
+        float runningSpeed =  PlayerDatabase.playerDatabase.getClassRunningForce(player[playerNumber].ChosenClass);
+        //set class xLimit
+        float xSpeedLimit = PlayerDatabase.playerDatabase.getClassRunningLimit(player[playerNumber].ChosenClass);
         // set updated speed
         float xSpeed = player[playerNumber].rigidBody.velocity.x;
-        float ySpeed = player[playerNumber].rigidBody.velocity.y;
-        
-        //set xLimit to use
-        float xSpeedLimit = Class[player[playerNumber].chosenClasses].runningLimit;
+        float ySpeed = player[playerNumber].rigidBody.velocity.y; 
 
         //force will always add to player
         Vector2 newForce = new Vector2();
@@ -54,12 +52,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(player[playerNumber].Left)) //move left
         {
             //newForce.x -= Class[player[playerNumber].chosenClasses].runningForce;
-            newForce.x -= ClassManager.classManager.GetClassRunningForce(player[playerNumber].my);
+            newForce.x -= runningSpeed;
         }
 
         if (Input.GetKey(player[playerNumber].Right)) //move right
         {
-            newForce.x += ClassManager.classManager.GetClassRunningForce(player[playerNumber].my);
+            newForce.x += runningSpeed;
         }
 
         //set limitSpeed to moving Horizontal
@@ -78,9 +76,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void playerGravity(int playerNumber) //set how player affected by gravity
     {
-        //set new gravity
-        float gravity = Class[player[playerNumber].chosenClasses].gravityInput;
-        
+        //get class gravity
+        float gravity = PlayerDatabase.playerDatabase.getClassGravityInput(player[playerNumber].ChosenClass);
+        //set gravity
         player[playerNumber].rigidBody.gravityScale = gravity;
     }
 
@@ -101,8 +99,8 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(jumpButton)) //jump
             {
-                player[playerNumber].rigidBody.velocity = new Vector2(xSpeed,0);
-                StartCoroutine(nullifyFalling(playerNumber));
+                player[playerNumber].rigidBody.velocity = new Vector2(xSpeed,0); //nullifyFallingForce first
+                StartCoroutine(applyJumpingForce(playerNumber));
             }
         }
     }
@@ -112,11 +110,12 @@ public class PlayerMovement : MonoBehaviour
         player[playerNumber].rigidBody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
     
-    IEnumerator nullifyFalling(int playerNumber) //nullify falling velocity before making A JUMP
+    //use this with PlayerJumping to apply jumping force after nullification
+    IEnumerator applyJumpingForce(int playerNumber) //nullify falling velocity before making A JUMP
     {
         yield return 0;
         //set jumpingInput
-        float jumpInput = Class[player[playerNumber].chosenClasses].jumpingForce;
+        float jumpInput = PlayerDatabase.playerDatabase.getClassJumpingForce(player[playerNumber].ChosenClass);
         
         //force will always add to player
         Vector2 newForce = new Vector2();

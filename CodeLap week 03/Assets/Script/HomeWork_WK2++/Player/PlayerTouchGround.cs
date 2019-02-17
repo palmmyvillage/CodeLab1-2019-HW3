@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerTouchGround : MonoBehaviour
 {
-    //set variable to store player Number
-    public int playerNumber;
-    
-    //set classs to refer controller
+    //set Type for what number of player this object is
     private Player_Info[] player;
+    
+    //set number to take reference
+    public int playerNumber;
     
     //start
     void Start()
     {
         //set it so it's easier to mention player
-        player = PlayerController.playerController.playerInfo;
+        player = PlayerDatabase.playerDatabase.playerInfo;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -23,9 +23,9 @@ public class PlayerTouchGround : MonoBehaviour
         {
             player[playerNumber - 1].jumpEnable = true;
         }
-    }
+    }//check when collisionEnter to toggle enableJump every time
 
-    public void OnCollisionStay2D(Collision2D other) //check collisionEnter to enable jump in PlayerController
+    public void OnCollisionStay2D(Collision2D other) //check collisionStay to enable jump in PlayerController
     {
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {

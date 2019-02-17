@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="29f4f0b9-83a3-45a9-8066-d0652cc1fd14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLap week 03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLap week 03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/realScenes/02_Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/realScenes/02_Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,63 +20,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarSpawner.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <marker date="1550003882070" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550003882070" expanded="true" signature="120:1845" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="426:1406" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="498:593" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="606:659" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="801:1400" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="874:1003" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1067:1194" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1261:1390" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1435:1843" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1580:1837" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1643:1793" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="1915:2019" ph="{...}" />
-                <marker date="1550003882070" expanded="true" signature="2088:2175" ph="{...}" />
+                <marker date="1550274721704" expanded="false" signature="6:111" ph="..." />
+                <marker date="1550274721704" expanded="true" signature="154:167" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerDatabase.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="765">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
               <folding>
-                <marker date="1550191877296" expanded="false" signature="6:111" ph="..." />
-                <marker date="1550191877296" expanded="true" signature="158:606" ph="{...}" />
-                <marker date="1550191877296" expanded="true" signature="346:604" ph="{...}" />
-                <marker date="1550191877296" expanded="true" signature="432:532" ph="{...}" />
-                <marker date="1550191877296" expanded="true" signature="545:598" ph="{...}" />
-                <marker date="1550191877296" expanded="true" signature="707:993" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="57" column="66" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="57" selection-end-column="66" />
-              <folding>
-                <marker date="1550191877289" expanded="false" signature="6:111" ph="..." />
-                <marker date="1550191877289" expanded="true" signature="154:991" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="255:328" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="469:710" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="542:638" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="651:704" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="720:988" ph="Helper Functions" />
-                <marker date="1550191877289" expanded="true" signature="797:968" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="843:940" ph="{...}" />
-                <marker date="1550191877289" expanded="true" signature="1091:1310" ph="{...}" />
+                <marker date="1550444590902" expanded="false" signature="6:111" ph="..." />
+                <marker date="1550444590902" expanded="true" signature="156:1963" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="349:394" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="545:574" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="626:847" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="677:819" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="734:809" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="899:1119" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="950:1092" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1007:1082" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1171:1391" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1222:1364" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1279:1354" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1443:1663" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1494:1636" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1551:1626" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1715:1961" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1788:1887" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="1899:1954" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="2024:2338" ph="{...}" />
+                <marker date="1550444590902" expanded="true" signature="2397:2592" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,28 +67,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="61" column="96" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="96" />
+            <state relative-caret-position="90">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
-                <marker date="1550191877302" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550191877302" expanded="true" signature="123:4097" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="293:680" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="472:545" ph="/* add Gravity ... */" />
-                <marker date="1550191877302" expanded="true" signature="593:674" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="738:986" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="761:852" ph="/* add Abilities to Run and Jump ... */" />
-                <marker date="1550191877302" expanded="true" signature="900:980" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="1106:2414" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="1575:1778" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="1846:1965" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="2047:2155" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="2196:2305" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="2500:2690" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="2761:3468" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="3218:3462" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="3281:3452" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="3550:3654" ph="{...}" />
-                <marker date="1550191877302" expanded="true" signature="3756:4095" ph="{...}" />
+                <marker date="1550274947834" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550274947834" expanded="true" signature="123:4293" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="274:634" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="398:499" ph="/* add Gravity (only when the scene start) ... */" />
+                <marker date="1550274947834" expanded="true" signature="547:628" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="692:940" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="715:806" ph="/* add Abilities to Run and Jump ... */" />
+                <marker date="1550274947834" expanded="true" signature="854:934" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="1060:2424" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="1703:1847" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="1915:1975" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="2057:2165" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="2206:2315" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="2510:2745" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="2816:3554" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="3273:3548" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="3336:3538" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="3636:3740" ph="{...}" />
+                <marker date="1550274947834" expanded="true" signature="3922:4291" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchStar.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="300">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <marker date="1550003138725" expanded="false" signature="6:78" ph="..." />
@@ -125,9 +110,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <marker date="1550444537728" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550444537728" expanded="true" signature="126:1324" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="321:442" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="498:678" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="596:672" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="848:1028" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="946:1022" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="1141:1322" ph="{...}" />
+                <marker date="1550444537728" expanded="true" signature="1239:1316" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Levels/StopWhenPause.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <marker date="1549908534129" expanded="false" signature="6:78" ph="..." />
+                <marker date="1549908534129" expanded="true" signature="122:970" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="384:403" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="461:521" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="552:742" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="642:736" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="775:968" ph="{...}" />
+                <marker date="1549908534129" expanded="true" signature="867:962" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemScoreUI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="195">
               <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <marker date="1550003773140" expanded="false" signature="6:100" ph="..." />
@@ -191,6 +215,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>rate</find>
+      <find>player_info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,17 +224,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Levels/StopWhenPause.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchStar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProCore/ProBuilder/Editor/pb_MissingScriptEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scenes/HomeWork_WK2.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/CirclingMotion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/realScenes/02_Level1.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -217,22 +245,23 @@
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassesStat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchStar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemScoreUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerDatabase.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="6" />
-    <option name="y" value="41" />
-    <option name="width" value="1434" />
+    <option name="x" value="5" />
+    <option name="y" value="40" />
+    <option name="width" value="1435" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -241,15 +270,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,6 +288,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -306,6 +336,10 @@
       <workItem from="1550005648743" duration="67000" />
       <workItem from="1550020343050" duration="612000" />
       <workItem from="1550190711135" duration="1784000" />
+      <workItem from="1550231959041" duration="156000" />
+      <workItem from="1550268702543" duration="8459000" />
+      <workItem from="1550444205164" duration="531000" />
+      <workItem from="1550445129698" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Ini every file of the base work">
       <created>1549955404460</created>
@@ -321,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550005692991</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="try using Type for characterClass choosing instead of using array number">
+      <created>1550232096703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550232096703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15127000" />
+    <option name="totallyTimeSpent" value="24872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,10 +378,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2785235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2946309" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -408,7 +448,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ini every file of the base work" />
     <MESSAGE value="Update setting up Static CLass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update setting up Static CLass" />
+    <MESSAGE value="try using Type for characterClass choosing instead of using array number" />
+    <option name="LAST_COMMIT_MESSAGE" value="try using Type for characterClass choosing instead of using array number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,94 +572,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassesStat.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <marker date="1550000660301" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550000660301" expanded="true" signature="126:1258" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="309:434" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="490:670" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="588:664" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="782:962" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="880:956" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="1075:1256" ph="{...}" />
-            <marker date="1550000660301" expanded="true" signature="1173:1250" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarScore.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1550003431171" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550003431171" expanded="true" signature="118:420" ph="{...}" />
-            <marker date="1550003431171" expanded="true" signature="334:418" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchStar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1550003138725" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550003138725" expanded="true" signature="124:710" ph="{...}" />
-            <marker date="1550003138725" expanded="true" signature="321:708" ph="{...}" />
-            <marker date="1550003138725" expanded="true" signature="365:702" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemScoreUI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <marker date="1550003773140" expanded="false" signature="6:100" ph="..." />
-            <marker date="1550003773140" expanded="true" signature="144:682" ph="{...}" />
-            <marker date="1550003773140" expanded="true" signature="329:350" ph="{...}" />
-            <marker date="1550003773140" expanded="true" signature="408:447" ph="{...}" />
-            <marker date="1550003773140" expanded="true" signature="486:680" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/ScoreManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1549945393136" expanded="false" signature="6:78" ph="..." />
-            <marker date="1549945393136" expanded="true" signature="121:327" ph="{...}" />
-            <marker date="1549945393136" expanded="true" signature="283:324" ph="{...}" />
-            <marker date="1549945393136" expanded="true" signature="407:457" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <marker date="1550003345760" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550003345760" expanded="true" signature="120:645" ph="{...}" />
-            <marker date="1550003345760" expanded="true" signature="325:564" ph="{...}" />
-            <marker date="1550003345760" expanded="true" signature="397:492" ph="{...}" />
-            <marker date="1550003345760" expanded="true" signature="505:558" ph="{...}" />
-            <marker date="1550003345760" expanded="true" signature="622:643" ph="{...}" />
-            <marker date="1550003345760" expanded="true" signature="744:794" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
+        <state relative-caret-position="975">
           <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
           <folding>
             <marker date="1550003882070" expanded="false" signature="6:78" ph="..." />
@@ -639,64 +595,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/realScenes/02_Level1.unity">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="61" column="96" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="96" />
-          <folding>
-            <marker date="1550191877302" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550191877302" expanded="true" signature="123:4097" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="293:680" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="472:545" ph="/* add Gravity ... */" />
-            <marker date="1550191877302" expanded="true" signature="593:674" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="738:986" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="761:852" ph="/* add Abilities to Run and Jump ... */" />
-            <marker date="1550191877302" expanded="true" signature="900:980" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="1106:2414" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="1575:1778" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="1846:1965" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="2047:2155" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="2196:2305" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="2500:2690" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="2761:3468" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="3218:3462" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="3281:3452" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="3550:3654" ph="{...}" />
-            <marker date="1550191877302" expanded="true" signature="3756:4095" ph="{...}" />
-          </folding>
+        <state relative-caret-position="227">
+          <caret line="4849" column="37" selection-start-line="4849" selection-start-column="37" selection-end-line="4849" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Scenes/HomeWork_WK2.unity">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <marker date="1550191877296" expanded="false" signature="6:111" ph="..." />
-            <marker date="1550191877296" expanded="true" signature="158:606" ph="{...}" />
-            <marker date="1550191877296" expanded="true" signature="346:604" ph="{...}" />
-            <marker date="1550191877296" expanded="true" signature="432:532" ph="{...}" />
-            <marker date="1550191877296" expanded="true" signature="545:598" ph="{...}" />
-            <marker date="1550191877296" expanded="true" signature="707:993" ph="{...}" />
-          </folding>
+        <state relative-caret-position="227">
+          <caret line="4964" column="37" selection-start-line="4964" selection-start-column="37" selection-end-line="4964" selection-end-column="37" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/ClassManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="57" column="66" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="57" selection-end-column="66" />
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <marker date="1550191877289" expanded="false" signature="6:111" ph="..." />
-            <marker date="1550191877289" expanded="true" signature="154:991" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="255:328" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="469:710" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="542:638" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="651:704" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="720:988" ph="Helper Functions" />
-            <marker date="1550191877289" expanded="true" signature="797:968" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="843:940" ph="{...}" />
-            <marker date="1550191877289" expanded="true" signature="1091:1310" ph="{...}" />
+            <marker date="1550274721704" expanded="false" signature="6:111" ph="..." />
+            <marker date="1550274721704" expanded="true" signature="154:167" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerDatabase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <marker date="1550444590902" expanded="false" signature="6:111" ph="..." />
+            <marker date="1550444590902" expanded="true" signature="156:1963" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="349:394" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="545:574" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="626:847" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="677:819" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="734:809" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="899:1119" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="950:1092" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1007:1082" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1171:1391" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1222:1364" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1279:1354" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1443:1663" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1494:1636" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1551:1626" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1715:1961" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1788:1887" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="1899:1954" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="2024:2338" ph="{...}" />
+            <marker date="1550444590902" expanded="true" signature="2397:2592" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <marker date="1550274947834" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550274947834" expanded="true" signature="123:4293" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="274:634" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="398:499" ph="/* add Gravity (only when the scene start) ... */" />
+            <marker date="1550274947834" expanded="true" signature="547:628" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="692:940" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="715:806" ph="/* add Abilities to Run and Jump ... */" />
+            <marker date="1550274947834" expanded="true" signature="854:934" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="1060:2424" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="1703:1847" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="1915:1975" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="2057:2165" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="2206:2315" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="2510:2745" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="2816:3554" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="3273:3548" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="3336:3538" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="3636:3740" ph="{...}" />
+            <marker date="1550274947834" expanded="true" signature="3922:4291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchStar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1550003138725" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550003138725" expanded="true" signature="124:710" ph="{...}" />
+            <marker date="1550003138725" expanded="true" signature="321:708" ph="{...}" />
+            <marker date="1550003138725" expanded="true" signature="365:702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/SystemScoreUI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <marker date="1550003773140" expanded="false" signature="6:100" ph="..." />
+            <marker date="1550003773140" expanded="true" signature="144:682" ph="{...}" />
+            <marker date="1550003773140" expanded="true" signature="329:350" ph="{...}" />
+            <marker date="1550003773140" expanded="true" signature="408:447" ph="{...}" />
+            <marker date="1550003773140" expanded="true" signature="486:680" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/ScoreManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1549945393136" expanded="false" signature="6:78" ph="..." />
+            <marker date="1549945393136" expanded="true" signature="121:327" ph="{...}" />
+            <marker date="1549945393136" expanded="true" signature="283:324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <marker date="1550003345760" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550003345760" expanded="true" signature="120:645" ph="{...}" />
+            <marker date="1550003345760" expanded="true" signature="325:564" ph="{...}" />
+            <marker date="1550003345760" expanded="true" signature="397:492" ph="{...}" />
+            <marker date="1550003345760" expanded="true" signature="505:558" ph="{...}" />
+            <marker date="1550003345760" expanded="true" signature="622:643" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Star/StarScore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1550003431171" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550003431171" expanded="true" signature="118:420" ph="{...}" />
+            <marker date="1550003431171" expanded="true" signature="334:418" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Player/PlayerTouchGround.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <marker date="1550444537728" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550444537728" expanded="true" signature="126:1324" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="321:442" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="498:678" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="596:672" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="848:1028" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="946:1022" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="1141:1322" ph="{...}" />
+            <marker date="1550444537728" expanded="true" signature="1239:1316" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/HomeWork_WK2++/Levels/StopWhenPause.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1549908534129" expanded="false" signature="6:78" ph="..." />
+            <marker date="1549908534129" expanded="true" signature="122:970" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="384:403" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="461:521" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="552:742" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="642:736" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="775:968" ph="{...}" />
+            <marker date="1549908534129" expanded="true" signature="867:962" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1554,7 +1554,7 @@ Transform:
   m_Children:
   - {fileID: 107709799}
   m_Father: {fileID: 1935363695}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &515116077
 Rigidbody2D:
@@ -2904,6 +2904,7 @@ Transform:
   m_Children:
   - {fileID: 274275657}
   - {fileID: 1389658465}
+  - {fileID: 1785073616}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4366,7 +4367,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1072
+  m_Name: pb_Mesh-1090
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4851,22 +4852,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo:
-  - name: Player1
+  - Name: Player1
+    playerNumber: 0
     rigidBody: {fileID: 1856278372}
     Up: 119
     Down: 115
     Left: 97
     Right: 100
-    chosenClasses: 0
+    ChosenClass: 0
     jumpEnable: 0
-  - name: Player2
+  - Name: Player2
+    playerNumber: 1
     rigidBody: {fileID: 515116077}
-    Up: 273
+    Up: 45
     Down: 274
     Left: 276
     Right: 275
-    chosenClasses: 0
+    ChosenClass: 0
     jumpEnable: 0
+  classInfo:
+  - Name: Warrior
+    className: 0
+    runningForce: 0
+    runningLimit: 0
+    jumpingForce: 0
+    gravityInput: 0
 --- !u!4 &1785073616
 Transform:
   m_ObjectHideFlags: 0
@@ -4875,11 +4885,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785073614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.726898, y: -0.036880493, z: 6.0556636}
+  m_LocalPosition: {x: -243.53043, y: -197.41055, z: 8.061943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1935363695}
-  m_RootOrder: 0
+  m_Father: {fileID: 980355967}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1785073617
 MonoBehaviour:
@@ -4905,12 +4915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c97341e94c29a548868d4da4ebbcbe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  classInfo:
-  - name: Warrior
-    runningForce: 40
-    runningLimit: 12
-    jumpingForce: 800
-    gravityInput: 2
 --- !u!1 &1797226900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,7 +5277,7 @@ Transform:
   m_Children:
   - {fileID: 322765086}
   m_Father: {fileID: 1935363695}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1887082173
 GameObject:
@@ -5450,7 +5454,6 @@ Transform:
   m_LocalPosition: {x: 4.3386536, y: 0.96206665, z: 1.5146484}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1785073616}
   - {fileID: 1856278378}
   - {fileID: 515116076}
   m_Father: {fileID: 0}
