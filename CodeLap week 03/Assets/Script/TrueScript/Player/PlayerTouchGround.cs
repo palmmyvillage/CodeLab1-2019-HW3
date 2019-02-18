@@ -22,7 +22,7 @@ public class PlayerTouchGround : MonoBehaviour
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {
             player.jumpEnable = true;
-            //player[playerNumber].isJumping = false;
+            player.isJumping = false;
         }
     }//check when collisionEnter to toggle enableJump every time
 
@@ -31,7 +31,7 @@ public class PlayerTouchGround : MonoBehaviour
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {
             player.jumpEnable = true;
-            //player[playerNumber - 1].isJumping = false;
+            player.isJumping = false;
         }
     }
 
