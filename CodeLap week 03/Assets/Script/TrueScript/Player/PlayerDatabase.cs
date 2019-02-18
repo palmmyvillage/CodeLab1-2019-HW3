@@ -45,6 +45,18 @@ public class PlayerDatabase : MonoBehaviour
         }
         return 0.0f;
     }
+    public float getClassGlidingInput(Class @class)
+    {
+        foreach (var classType in classInfo)
+        {
+            if (@class == classType.className)
+            {
+                return classType.glidingInput;
+            }
+        }
+        return 0.0f;
+    }
+
     public float getClassRunningLimit(Class @class)
     {
         foreach (var classType in classInfo)
@@ -97,6 +109,7 @@ public class Player_Info
     public KeyCode Right;
     [FormerlySerializedAs("myType")] public PlayerDatabase.Class ChosenClass;
     public bool jumpEnable;
+    public bool isJumping;
 }
 
 //ClassInfo
@@ -108,5 +121,6 @@ public class Class_Info
     public float runningForce;
     public float runningLimit;
     public float jumpingForce;
+    public float glidingInput;
     public float gravityInput;
 }

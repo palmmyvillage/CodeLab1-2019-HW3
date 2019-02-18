@@ -5,7 +5,7 @@ using UnityEngine;
 public class StarScore : MonoBehaviour
 {
     //set number to indicate color of star
-    public int starColor;
+    public int starNumber;
     
     //set int score refer from starManager
     public int score;
@@ -13,6 +13,6 @@ public class StarScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = StarManager.starManager.starsInfo[starColor - 1].score;
+       score = StarDatabase.starDatabase.starsInfo[starNumber - 1].score; 
     }
 }

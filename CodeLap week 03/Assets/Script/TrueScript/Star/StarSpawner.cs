@@ -9,7 +9,7 @@ public class StarSpawner : MonoBehaviour
     
     //set SpawnRate
     public SpawnRate rate;
-    private GameObject[] starSpawning;
+    public GameObject[] starSpawning;
     
     //set how to calculate spawn
     public SpawnTimes times;
@@ -36,20 +36,20 @@ public class StarSpawner : MonoBehaviour
         {
             if (i <= rate.yellowRate) //load up rate of yellow
             {
-                starSpawning[i] = Resources.Load<GameObject>("Prefab/HW2_Prefab/StarYellow_Prefab");
+                starSpawning[i] = Resources.Load<GameObject>("Prefab/TruePrefab/Star/StarYellow_Prefab");
             }
-            else if (i <= rate.blueRate) //load up rate of blue
+            else if (i <= rate.yellowRate + rate.blueRate) //load up rate of blue
             {
-                starSpawning[i] = Resources.Load<GameObject>("Prefab/HW2_Prefab/StarBlue_Prefab");
+                starSpawning[i] = Resources.Load<GameObject>("Prefab/TruePrefab/Star/StarBlue_Prefab");
             }
-            else if (i > rate.purpleRate) //load up rate of purple
+            else if (i > rate.yellowRate + rate.blueRate) //load up rate of purple
             {
-                starSpawning[i] = Resources.Load<GameObject>("Prefab/HW2_Prefab/StarPurple_Prefab");
+                starSpawning[i] = Resources.Load<GameObject>("Prefab/TruePrefab/Star/StarPurple_Prefab");
             }
         }
     }
 
-    public void spawnStar()
+    public void spawnStar() //use this function to spawn star
     {
         spawnTimesReal = Random.Range(times.spawnNum_min, times.spawnNum_max);
         

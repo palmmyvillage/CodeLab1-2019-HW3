@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3388506672444027656}
   - component: {fileID: 1206668179}
   m_Layer: 0
-  m_Name: PurpleStar
+  m_Name: StarPurple_Prefab
   m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,13 +1628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae6ee2cc11bbde48a00bd596093ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlingSpeed: 3
-  x_scaler_min: 2
-  x_scaler_max: 4
-  y_scaler_min: 2
-  y_scaler_max: 4
-  z_scaler_min: 0
-  z_scaler_max: 0
+  starNumber: 3
 --- !u!114 &3388506672444027656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1647,8 +1641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e883b9a324f555f42953e3e2f01f7628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starManager: {fileID: 0}
-  starColor: 3
+  starNumber: 3
   score: 0
 --- !u!114 &1206668179
 MonoBehaviour:
@@ -1662,12 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34179eb007320b241b76dec37a2f8eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xOrigin_min: -3.3
-  xOrigin_max: 3.3
-  yOrigin_min: 0.8
-  yOrigin_max: 1.7
-  zOrigin_min: -0.6
-  zOrigin_max: -0.6
+  starNumber: 3
 --- !u!1 &7954664911544494727
 GameObject:
   m_ObjectHideFlags: 0

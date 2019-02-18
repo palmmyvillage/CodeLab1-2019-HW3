@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerTouchGround : MonoBehaviour
 {
     //set Type for what number of player this object is
-    private Player_Info[] player;
+    public Player_Info player;
     
     //set number to take reference
     public int playerNumber;
@@ -14,30 +14,32 @@ public class PlayerTouchGround : MonoBehaviour
     void Start()
     {
         //set it so it's easier to mention player
-        player = PlayerDatabase.playerDatabase.playerInfo;
+        player = PlayerDatabase.playerDatabase.playerInfo[playerNumber - 1];
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {
-            player[playerNumber - 1].jumpEnable = true;
+            player.jumpEnable = true;
+            //player[playerNumber].isJumping = false;
         }
     }//check when collisionEnter to toggle enableJump every time
 
-    public void OnCollisionStay2D(Collision2D other) //check collisionStay to enable jump in PlayerController
+    public void OnTriggerStay2D(Collider2D other) //check collisionStay to enable jump in PlayerController
     {
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {
-            player[playerNumber - 1].jumpEnable = true;
+            player.jumpEnable = true;
+            //player[playerNumber - 1].isJumping = false;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other) //check collisionExit to disable jump in PlayerController
+    private void OnTriggerExit2D(Collider2D  other) //check collisionExit to disable jump in PlayerController
     {
         if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Player"))
         {
-            player[playerNumber - 1].jumpEnable = false;
+            player.jumpEnable = false;
         }
     }
 }
