@@ -4,18 +4,38 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SystemController : MonoBehaviour
 {
+    //set this as static
+    public static SystemController systemController;
+    
     //set endGameButton
-    public endGameButton endGameButton;
+    public SystemButton systemGameButton;
+    public WinnerTextColor[] winnerTextColor;
     
     //set state of pauseGame
     public bool pauseGame;
+    public GameObject pausePanel;
+    //set state to endGame
     public bool endGame;
+    public GameObject endPanel;
+    public Text winner;
     
-    //set systemManager for pause
-    public SystemManager systemManager;
+    //awake is called right when scene loaded
+    void Awake()
+    {
+        if (systemController == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            systemController = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     
     // Start is called before the first frame update
     void Start()
@@ -29,17 +49,7 @@ public class SystemController : MonoBehaviour
     void Update()
     {
         //set to press pause
-        if (Input.GetKeyDown(endGameButton.pause))
-        {
-            if (pauseGame == false)
-            {
-                pauseGameEnter();
-            }
-            else
-            {
-                pauseGameExit();
-            }
-        }
+        pauseGameButtonDown();
 
         //set what happen in pauseGame
         if (pauseGame == true)
@@ -54,7 +64,24 @@ public class SystemController : MonoBehaviour
         }
     }
 
-    //how to pause
+    // use this to set how to pressing pause
+    public void pauseGameButtonDown()
+    {
+        //set to press pause
+        if (Input.GetKeyDown(systemGameButton.pause))
+        {
+            if (pauseGame == false)
+            {
+                pauseGameEnter();
+            }
+            else
+            {
+                pauseGameExit();
+            }
+        }
+    }
+
+    //use this to enter pauseGame Option
     public void pauseGameEnter()
     {
         //this work only when endGame is not present
@@ -65,7 +92,7 @@ public class SystemController : MonoBehaviour
             //stop time
             Time.timeScale = 0.0f;
             //toggle pausePanel
-            systemManager.pauseGame();
+            pausePanel.SetActive(!pausePanel.activeInHierarchy);
         }
     }
     
@@ -73,18 +100,15 @@ public class SystemController : MonoBehaviour
     public void pauseGameOption()
     {
         //press restart to restart
-        if (Input.GetKeyDown(endGameButton.restart))
+        if (Input.GetKeyDown(systemGameButton.restart))
         {
-            print("restart");
-            SceneManager.LoadScene("HomeWork_WK2"); //restart scene
+            SceneManager.LoadScene("01_StartMenu"); //restart scene
             Time.timeScale = 1.0f; //make time move on
-            endGame = false; // get out of endGameState
         }
         
         //press qiuit to quit
-        if (Input.GetKeyDown(endGameButton.quit))
+        if (Input.GetKeyDown(systemGameButton.quit))
         {
-            print("quit");
             Application.Quit(); // closeGame
         }
     }
@@ -100,7 +124,7 @@ public class SystemController : MonoBehaviour
             //resume time
             Time.timeScale = 1.0f;
             //toggle pause game panel
-            systemManager.pauseGame();
+            pausePanel.SetActive(!pausePanel.activeInHierarchy);
         }
     }
     
@@ -118,29 +142,71 @@ public class SystemController : MonoBehaviour
     public void endOption()
     {
         //press restart to restart
-        if (Input.GetKeyDown(endGameButton.restart))
+        if (Input.GetKeyDown(systemGameButton.restart))
         {
-            print("restart");
-            SceneManager.LoadScene("HomeWork_WK2"); //restart scene
+            SceneManager.LoadScene("01_StartMenu"); //restart scene
             Time.timeScale = 1.0f; //make time move on
             endGame = false; // get out of endGameState
         }
         
         //press qiuit to quit
-        if (Input.GetKeyDown(endGameButton.quit))
+        if (Input.GetKeyDown(systemGameButton.quit))
         {
-            print("quit");
             Application.Quit(); // closeGame
         }
     }
+
+
+    //use this to endGames when stars are all collected
+    public void gameEnds()
+    {
+        {
+            int P1score = ScoreManager.scoreManager.playerScore[0].currentScore;
+            int P2score = ScoreManager.scoreManager.playerScore[1].currentScore;
+
+            endPanel.SetActive(true);
+            if (P1score > P2score)
+            {
+                endPanel.GetComponent<Image>().color = winnerTextColor[0].background;
+                winner.text = winnerTextColor[0].name + " Win";
+                winner.color = winnerTextColor[0].winningText;
+            }
+            else if (P1score < P2score)
+            {
+                endPanel.GetComponent<Image>().color = winnerTextColor[1].background;
+                winner.text = winnerTextColor[1].name + " Win";
+                winner.color = winnerTextColor[1].winningText;
+            }
+            else if (P1score == P2score)
+            {
+                endPanel.GetComponent<Image>().color = winnerTextColor[2].background;
+                winner.text = "Draw";
+                winner.color = winnerTextColor[2].winningText;
+            }
+            systemController.endGameEnter();
+        }
+    }
+    
+    
+    
+   //set this as state
 }
 
 [System.Serializable]
 //set up player class to assign button
-public class endGameButton
+public class SystemButton
 {
     public KeyCode pause;
     public KeyCode restart;
     public KeyCode quit;
+}
+
+[System.Serializable]
+//set up color on text
+public class WinnerTextColor
+{
+    public string name;
+    public Color winningText;
+    public Color background;
 }
 

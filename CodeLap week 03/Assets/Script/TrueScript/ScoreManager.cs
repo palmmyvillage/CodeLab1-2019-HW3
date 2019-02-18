@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -12,9 +13,48 @@ public class ScoreManager : MonoBehaviour
 
     void Awake()
     {
-        scoreManager = this;
+        if (scoreManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            scoreManager = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
+    public void StoreScore() //use this to score current score in storedScore
+    {
+        for (int i = 0; i < playerScore.Length; i++)
+        {
+            playerScore[i].storedScore = playerScore[i].currentScore;
+        }
+    }
+
+    public void ResetScore() //use this to reset the score to 0
+    {
+        for (int i = 0; i < playerScore.Length; i++)
+        {
+            playerScore[i].currentScore = 0;
+        }
+    }
+
+    public void RowbackScore() //use this to reset currentScore  to storedScore
+    {
+        for (int i = 0; i < playerScore.Length; i++)
+        {
+            playerScore[i].currentScore = playerScore[i].storedScore;
+        }
+    }
+
+    public void resetStoredScored() //use this to reset storedScore to 0
+    {
+        for (int i = 0; i < playerScore.Length; i++)
+        {
+            playerScore[i].storedScore = 0;
+        }
+    }
 }
 
 [System.Serializable]
@@ -22,5 +62,6 @@ public class ScoreManager : MonoBehaviour
 public class Player_Score
 {
     public string name;
-    public int score;
+    public int currentScore;
+    public int storedScore;
 }

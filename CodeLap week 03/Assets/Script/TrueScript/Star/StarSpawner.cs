@@ -7,9 +7,12 @@ public class StarSpawner : MonoBehaviour
     //set this as static
     public static StarSpawner starSpawner;
     
+    //set starCount
+    public StarCount starCount;
+    
     //set SpawnRate
     public SpawnRate rate;
-    public GameObject[] starSpawning;
+    private GameObject[] starSpawning;
     
     //set how to calculate spawn
     public SpawnTimes times;
@@ -52,7 +55,6 @@ public class StarSpawner : MonoBehaviour
     public void spawnStar() //use this function to spawn star
     {
         spawnTimesReal = Random.Range(times.spawnNum_min, times.spawnNum_max);
-        
         //spawning
         if (times.maxSpawn > 0)
         {
@@ -60,10 +62,13 @@ public class StarSpawner : MonoBehaviour
             {
                 starNumber = Random.Range(0, starSpawning.Length);
                 Instantiate(starSpawning[starNumber]);
+                starCount.totalStar++;
             }
 
             times.maxSpawn -= 1;
         }
+
+        starCount.starGathered++;
     }
 }
 
@@ -84,4 +89,12 @@ public class SpawnTimes
     public int maxSpawn;
     public int spawnNum_min;
     public int spawnNum_max;
+}
+
+[System.Serializable]
+//set up how to count stars
+public class StarCount
+{
+    public int totalStar;
+    public int starGathered;
 }

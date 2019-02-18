@@ -86,12 +86,12 @@ public class PlayerDatabase : MonoBehaviour
        //make static or destroy
        if (playerDatabase == null)
           {
-           DontDestroyOnLoad(gameObject);
-          playerDatabase = this;
+            DontDestroyOnLoad(gameObject);
+            playerDatabase = this;
           }
        else
           {
-          Destroy(gameObject);
+            Destroy(gameObject);
           }
      }
 }
