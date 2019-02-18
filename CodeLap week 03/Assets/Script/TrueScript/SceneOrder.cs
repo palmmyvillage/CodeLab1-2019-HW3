@@ -24,7 +24,7 @@ public class SceneOrder : MonoBehaviour
     }
 
     //use this to changeScene
-    void GoToScene(string scene)
+    public void GoToScene(string scene)
     {
         SceneManager.LoadScene(scene);
         MenuDisable.menuDisable.DisablingFunction();

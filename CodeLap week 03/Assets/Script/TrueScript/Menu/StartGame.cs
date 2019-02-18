@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
+    public static StartGame startMenu;
+    
     //set button to start
     public KeyCode[] pressToStart;
 
     //set inGameElement to Load
-    public GameObject inGameSystem;
     public GameObject inGameUI;
 
     //set MenuElement to disable
@@ -17,7 +18,7 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        startMenu = this;
     }
 
 
@@ -32,13 +33,14 @@ public class StartGame : MonoBehaviour
     {
         if (Input.GetKeyDown(pressToStart[0]) && !Input.GetKeyDown(pressToStart[1]))
         {
-
+            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.level1);
+            exitMenu();
         }
 
         if (Input.GetKeyDown(pressToStart[1]) && !Input.GetKeyDown(pressToStart[0]))
         {
-
-
+            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.level2);
+            exitMenu();
         }
     }
 
@@ -47,5 +49,12 @@ public class StartGame : MonoBehaviour
         inGameUI.SetActive(true);
 
         startMenuUI.SetActive(false);
+    }
+
+    public void enterMenu()
+    {
+        inGameUI.SetActive(false);
+        
+        startMenuUI.SetActive(true);
     }
 }

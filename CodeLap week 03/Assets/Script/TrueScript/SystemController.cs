@@ -103,7 +103,8 @@ public class SystemController : MonoBehaviour
         //press restart to restart
         if (Input.GetKeyDown(systemGameButton.restartGame))
         {
-            SceneManager.LoadScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
+            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
+            StartGame.startMenu.enterMenu();
             Time.timeScale = 1.0f; //make time move on
         }
         
@@ -145,7 +146,8 @@ public class SystemController : MonoBehaviour
         //press restart to restart
         if (Input.GetKeyDown(systemGameButton.restartGame))
         {
-            SceneManager.LoadScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
+            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
+            StartGame.startMenu.enterMenu();
             Time.timeScale = 1.0f; //make time move on
             endGame = false; // get out of endGameState
         }
