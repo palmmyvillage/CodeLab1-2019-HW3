@@ -2029,11 +2029,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'press [ESC] to resume
-
-    press [SPACE] to restart
-
-    presss [Q] to quit'
+  m_Text: "press [ESC] to resume\npress [SPACE] to restart this level\npress [R] to
+    restart the game \npress [Q] to quit"
 --- !u!222 &646381661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2108,6 +2105,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &710830471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710830472}
+  - component: {fileID: 710830473}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &710830472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710830471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 980355967}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710830473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710830471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2bf57749dd69f41a7f573e6779b00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneList:
+    Menu: 01_StartMenu
+    level1: 
+    level2: 
 --- !u!1 &714237946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2852,7 @@ Transform:
   - {fileID: 274275657}
   - {fileID: 1389658465}
   - {fileID: 1785073616}
+  - {fileID: 710830472}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3586,7 +3631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   systemGameButton:
     pause: 27
-    restart: 32
+    restartLevel: 32
+    restartGame: 114
     quit: 113
   winnerTextColor:
   - name: Player1
@@ -4490,6 +4536,7 @@ GameObject:
   - component: {fileID: 1785073616}
   - component: {fileID: 1785073615}
   - component: {fileID: 1785073617}
+  - component: {fileID: 1785073618}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: PlayerController
@@ -4562,6 +4609,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb8caa8a968771d4d9fbc0bf49b38e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1785073618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785073614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497e2042eeaef9e4986d93f27d1002d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1797226900
@@ -5321,7 +5380,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'press [SPACE] to restart
+  m_Text: 'press [R] to restart the game
 
     presss [Q] to quit'
 --- !u!222 &2035437060

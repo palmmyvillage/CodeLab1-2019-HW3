@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class SystemController : MonoBehaviour
@@ -100,9 +101,9 @@ public class SystemController : MonoBehaviour
     public void pauseGameOption()
     {
         //press restart to restart
-        if (Input.GetKeyDown(systemGameButton.restart))
+        if (Input.GetKeyDown(systemGameButton.restartGame))
         {
-            SceneManager.LoadScene("01_StartMenu"); //restart scene
+            SceneManager.LoadScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
             Time.timeScale = 1.0f; //make time move on
         }
         
@@ -142,9 +143,9 @@ public class SystemController : MonoBehaviour
     public void endOption()
     {
         //press restart to restart
-        if (Input.GetKeyDown(systemGameButton.restart))
+        if (Input.GetKeyDown(systemGameButton.restartGame))
         {
-            SceneManager.LoadScene("01_StartMenu"); //restart scene
+            SceneManager.LoadScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
             Time.timeScale = 1.0f; //make time move on
             endGame = false; // get out of endGameState
         }
@@ -155,7 +156,6 @@ public class SystemController : MonoBehaviour
             Application.Quit(); // closeGame
         }
     }
-
 
     //use this to endGames when stars are all collected
     public void gameEnds()
@@ -197,7 +197,8 @@ public class SystemController : MonoBehaviour
 public class SystemButton
 {
     public KeyCode pause;
-    public KeyCode restart;
+    public KeyCode restartLevel;
+    public KeyCode restartGame;
     public KeyCode quit;
 }
 
