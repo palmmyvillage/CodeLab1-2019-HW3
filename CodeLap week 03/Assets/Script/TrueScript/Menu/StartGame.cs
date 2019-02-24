@@ -18,7 +18,14 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startMenu = this;
+        if (startMenu == null)
+        {
+            startMenu = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 
@@ -47,6 +54,7 @@ public class StartGame : MonoBehaviour
     public void exitMenu()
     {
         inGameUI.SetActive(true);
+        SystemController.systemController.enabled = true;
 
         startMenuUI.SetActive(false);
     }
@@ -54,6 +62,7 @@ public class StartGame : MonoBehaviour
     public void enterMenu()
     {
         inGameUI.SetActive(false);
+        SystemController.systemController.enabled = false;
         
         startMenuUI.SetActive(true);
     }

@@ -31,6 +31,7 @@ public class PlayerTouchStar : MonoBehaviour
             {
                 if (StarSpawner.starSpawner.starCount.starGathered >= StarSpawner.starSpawner.starCount.totalStar)
                 {
+                    //print("Palmmy");
                     SystemController.systemController.gameEnds();
                 }
             }

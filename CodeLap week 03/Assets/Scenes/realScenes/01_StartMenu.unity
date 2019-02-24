@@ -771,6 +771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1398144711253158963, guid: 4e74fbc323eb3d747b968240218d7260,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1398144711253158970, guid: 4e74fbc323eb3d747b968240218d7260,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1351,7 +1356,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'press [R] to restart the game
+  m_Text: 'press [SPACE] to restart the Level
+
+    press [R] to restart the game
 
     presss [Q] to quit'
 --- !u!222 &1274568818
@@ -1373,6 +1380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954859345380353718, guid: f219c8ace71057d449d7f20bd29845f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7954859345380353713, guid: f219c8ace71057d449d7f20bd29845f7,
         type: 3}
@@ -1766,7 +1778,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451601442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb8caa8a968771d4d9fbc0bf49b38e9e, type: 3}
   m_Name: 
@@ -1939,7 +1951,7 @@ MonoBehaviour:
     blueRate: 30
     purpleRate: 10
   times:
-    maxSpawn: 1
+    maxSpawn: 7
     spawnNum_min: 2
     spawnNum_max: 4
 --- !u!114 &1466444857
@@ -2311,7 +2323,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694469771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf7be308fe9f7af4cbbe0d2e24f22776, type: 3}
   m_Name: 

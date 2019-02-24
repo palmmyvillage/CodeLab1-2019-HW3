@@ -30,6 +30,7 @@ public class ScoreManager : MonoBehaviour
         {
             playerScore[i].storedScore = playerScore[i].currentScore;
         }
+        ScoreUI.systemScore.ShowScore();
     }
 
     public void ResetScore() //use this to reset the score to 0
@@ -38,6 +39,7 @@ public class ScoreManager : MonoBehaviour
         {
             playerScore[i].currentScore = 0;
         }
+        ScoreUI.systemScore.ShowScore();
     }
 
     public void RowbackScore() //use this to reset currentScore  to storedScore
@@ -46,6 +48,7 @@ public class ScoreManager : MonoBehaviour
         {
             playerScore[i].currentScore = playerScore[i].storedScore;
         }
+        ScoreUI.systemScore.ShowScore();
     }
 
     public void resetStoredScored() //use this to reset storedScore to 0
@@ -54,6 +57,8 @@ public class ScoreManager : MonoBehaviour
         {
             playerScore[i].storedScore = 0;
         }
+
+        ScoreUI.systemScore.ShowScore();
     }
 }
 

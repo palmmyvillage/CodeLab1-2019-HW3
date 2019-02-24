@@ -29,7 +29,7 @@ public class SteamPunk_Moving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LevelMoving();
+           LevelMoving();
     }
 
     public void LevelMoving()

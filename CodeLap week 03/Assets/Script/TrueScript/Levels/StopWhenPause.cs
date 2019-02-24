@@ -5,7 +5,6 @@ using UnityEngine;
 public class StopWhenPause : MonoBehaviour
 {
     //set SystemController
-    public SystemController systemController;
     
     //set DynamicScript Action
     public SteamPunk_Moving moving;
@@ -26,7 +25,7 @@ public class StopWhenPause : MonoBehaviour
 
     public void stopDynamic()
     {
-        if (systemController.pauseGame == true || systemController.endGame == true)
+        if (SystemController.systemController.pauseGame == true || SystemController.systemController.endGame == true)
         {
             moving.enabled = false;
             rotating.enabled = false;
@@ -35,7 +34,7 @@ public class StopWhenPause : MonoBehaviour
 
     public void resumeDynamic()
     {
-        if (systemController.pauseGame == false && systemController.endGame == false)
+        if (SystemController.systemController.pauseGame == false && SystemController.systemController.endGame == false)
         {
             moving.enabled = true;
             rotating.enabled = true;   

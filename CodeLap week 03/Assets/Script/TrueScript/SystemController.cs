@@ -100,15 +100,28 @@ public class SystemController : MonoBehaviour
     //how pause option works
     public void pauseGameOption()
     {
-        //press restart to restart
-        if (Input.GetKeyDown(systemGameButton.restartGame))
+        //press restartLevel to restartLevel
+        if (Input.GetKeyDown(systemGameButton.restartLevel))
         {
-            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
-            StartGame.startMenu.enterMenu();
+            SceneOrder.sceneOrder.GoToScene(SceneManager.GetActiveScene().name); //restart scene
+            pauseGameExit();
+            ScoreManager.scoreManager.ResetScore(); //reset the scores
+            StarSpawner.starSpawner.resetSpawner(); //reset Spawner count
             Time.timeScale = 1.0f; //make time move on
         }
         
-        //press qiuit to quit
+        //press restartGame to restartGame
+        if (Input.GetKeyDown(systemGameButton.restartGame))
+        {
+            SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.Menu);//restart scene
+            pauseGameExit();
+            StartGame.startMenu.enterMenu(); 
+            ScoreManager.scoreManager.ResetScore(); //reset the scores
+            StarSpawner.starSpawner.resetSpawner(); //reset Spawner count
+            Time.timeScale = 1.0f; //make time move on
+        }
+        
+        //press quit to quit
         if (Input.GetKeyDown(systemGameButton.quit))
         {
             Application.Quit(); // closeGame
@@ -143,19 +156,48 @@ public class SystemController : MonoBehaviour
     //how end work
     public void endOption()
     {
+        //press restartLevel to restartLevel
+        if (Input.GetKeyDown(systemGameButton.restartLevel))
+        {
+            SceneOrder.sceneOrder.GoToScene(SceneManager.GetActiveScene().name); //restart scene
+            pauseGameExit();
+            ScoreManager.scoreManager.ResetScore(); //reset the scores
+            StarSpawner.starSpawner.resetSpawner(); //reset Spawner count
+            Time.timeScale = 1.0f; //make time move on
+            endGameExit(); //exit endGame panel
+        }
+        
         //press restart to restart
         if (Input.GetKeyDown(systemGameButton.restartGame))
         {
             SceneOrder.sceneOrder.GoToScene(SceneOrder.sceneOrder.sceneList.Menu); //restart scene
+            pauseGameExit();
             StartGame.startMenu.enterMenu();
+            ScoreManager.scoreManager.ResetScore(); //reset the scores
+            StarSpawner.starSpawner.resetSpawner(); //reset Spawner count
             Time.timeScale = 1.0f; //make time move on
-            endGame = false; // get out of endGameState
+            endGameExit(); //exit endGame panel
         }
         
         //press qiuit to quit
         if (Input.GetKeyDown(systemGameButton.quit))
         {
             Application.Quit(); // closeGame
+        }
+    }
+    
+    //how to unpause
+    public void endGameExit()
+    {
+        //this work only when endGame is not present
+        if (pauseGame == false)
+        {
+            //set game state to pause
+            endGame = false;
+            //resume time
+            Time.timeScale = 1.0f;
+            //toggle pause game panel
+            endPanel.SetActive(!endPanel.activeInHierarchy);
         }
     }
 

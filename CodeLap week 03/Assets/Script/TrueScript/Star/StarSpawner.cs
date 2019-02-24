@@ -16,6 +16,7 @@ public class StarSpawner : MonoBehaviour
     
     //set how to calculate spawn
     public SpawnTimes times;
+    private int maxSpawnForReset;
     private int spawnTimesReal;
     private int starNumber;
 
@@ -52,6 +53,11 @@ public class StarSpawner : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        maxSpawnForReset = times.maxSpawn;
+    }
+
     public void spawnStar() //use this function to spawn star
     {
         spawnTimesReal = Random.Range(times.spawnNum_min, times.spawnNum_max);
@@ -69,6 +75,13 @@ public class StarSpawner : MonoBehaviour
         }
 
         starCount.starGathered++;
+    }
+
+    public void resetSpawner()
+    {
+        starCount.totalStar = 0;
+        starCount.starGathered = 0;
+        times.maxSpawn = maxSpawnForReset;
     }
 }
 
